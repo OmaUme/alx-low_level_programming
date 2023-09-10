@@ -1,4 +1,3 @@
-#include <unistd.h>
 #include <stdio.h>
 /**
  * main -start point of the program
@@ -7,12 +6,15 @@
  */
 int main(void)
 {
-int a;
-char b;
-for (a = '0'; a < 10; a++)
-putchar((a % 10) + '0');
-for (b = 'a'; b <= 'f'; b++)
-putchar(b);
+char a;
+for (a = '0'; a <= 'f'; a++)
+{
+if ((a >= '0' && a <= '9') || (a >= 'a' && a <= 'f'))
+{
+putchar(a);
 putchar('\n');
+}
+}
 return (0);
 }
+
