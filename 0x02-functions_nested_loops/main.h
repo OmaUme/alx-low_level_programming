@@ -1,6 +1,6 @@
 #define main_h
 /**
- * main.h is a file
+ * main.h is a header file
  * A header file that contains functions declarations
  */
 void print_alphabet(void);
